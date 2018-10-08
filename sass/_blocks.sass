@@ -1,0 +1,109 @@
+@import "bourbon/bourbon"
+@import "sass/_custom"
+
+/* Внешние блоки */
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.25
+	font-family: "RobotoCondensedRegular", sans-serif
+	overflow-x: hidden
+	background-color: #fff
+
+/* Шапка */
+.header
+	&__top
+		background-color: #f4f4f4
+		height: 36px
+		overflow: hidden
+	&__bottom
+		padding-top: 27px
+		padding-bottom: 25px
+	&__h-link
+		display: block
+		width: 100%
+	&__h-logo
+	&__h-bar
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+	&__h-nav
+	&__h-search
+		padding: 8px 0
+	&__h-info
+		padding: 9px 0
+	&__mob
+		padding: 27px 0 25px
+	&__h-mobbar
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&__h-mobnav
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__h-moblogo
+	&__h-mobinfo
+		.h-info__item
+			padding-left: 30px
+
+/* Контент */
+
+.page
+	&__p-indexslider
+		padding-bottom: 8px
+	&__baners
+		padding-bottom: 97px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__p-baner
+		width: 50%
+		&-left
+			float: left
+			padding-right: 4px
+		&-right
+			float: right
+			padding-left: 4px
+	&__section
+	&__p-information
+		padding-bottom: 100px
+
+/* Подвал */
+
+.footer
+	&__subscription
+		padding-top: 51px
+		padding-bottom: 55px
+		background-color: #f4f4f4
+	&__f-subscription
+	&__top
+		padding-top: 28px
+		padding-bottom: 22px
+	&__bottom
+		border-top: 1px solid #ededed
+		padding-top: 11px
+		padding-bottom: 9px
+	&__f-nav
+	&__f-copy
+		text-align: center
+		display: block
+		width: 100%

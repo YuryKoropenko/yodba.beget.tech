@@ -1,0 +1,145 @@
+@import "bourbon/bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px)
+	.h-nav__item
+		padding-right: 30px
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px)
+	.header__bottom
+		display: none
+	.h-link__item
+		width: 100%
+		text-align: center
+	.h-link
+		padding-left: 15px
+		padding-right: 15px
+	.p-baner
+		height: 420px
+	.f-nav__item
+		padding-left: 30px
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.p-indexslider__item
+		height: 480px
+	.p-indexslider__title
+		font-size: 40px
+		line-height: 40px
+	.p-indexslider__description
+		font-size: 13px
+		margin-top: 22px
+		max-width: 194px
+		margin-bottom: 11px
+	.page__p-baner
+		float: none
+		width: 100%
+		padding: 0
+	.p-baner
+		height: 314px
+	.page__p-baner-left
+		margin-bottom: 8p
+	.page__baners
+		padding-bottom: 69px
+	.p-information
+		max-width: 301px
+		width: 100%
+		margin: 0 auto
+	.p-information__list
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	.p-information__item
+		margin-left: 0 !important
+		width: 50%
+		display: block
+		float: left
+		padding-bottom: 15px
+	.page__p-information
+		padding-bottom: 63px
+	.f-subscription__description
+		max-width: 276px
+		width: 100%
+		margin: 0 auto
+	.f-subscription__form
+		max-width: 303px
+	.hidden-xs
+		display: none
+	.f-nav
+		&__item
+			display: inline-block
+			width: auto
+			margin-bottom: 26px
+			padding-left: 28px
+	.footer__top
+		padding-bottom: 0
+	.header
+		position: relative
+	.header__h-mobmenu
+		position: absolute
+		top: 100%
+		left: 0
+		right: 0
+		background-color: #fff
+		z-index: 10
+		padding-bottom: 37px
+		display: none
+	.h-nav__item
+		padding-right: 0
+		width: 100%
+	.h-nav__link
+		display: inline-block
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 479px)
+	/**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.visible-xs
+		display: none
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.header__mob
+		display: none
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

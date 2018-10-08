@@ -1,0 +1,23 @@
+/* font-family: "RobotoCondensedRegular" */
+@font-face {
+  font-family: "RobotoCondensedRegular";
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Regular.ttf");
+}
+
+/* font-family: "RobotoCondensedBold" */
+@font-face {
+  font-family: "RobotoCondensedBold";
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf");
+}
+
+/* font-family: "CrimsonTextRegular" */
+@font-face {
+  font-family: "CrimsonTextRegular";
+  src: url("../fonts/CrimsonText/CrimsonText-Regular.ttf");
+}
+
+/* font-family: "RobotoLight" */
+@font-face {
+  font-family: "RobotoLight";
+  src: url("../fonts/Roboto/Roboto-Light.ttf");
+}
