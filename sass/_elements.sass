@@ -461,3 +461,373 @@
 	font-size: 12px
 	line-height: 20px
 	font-family: "RobotoLight", sans-serif
+
+.p-path
+	font-size: 0
+	&__link
+		color: #1a1a1a
+		font-size: 13px
+		display: block
+		&:hover
+			text-decoration: none
+			color: #1a1a1a
+			opacity: .5
+	&__item
+		display: inline-block
+		padding-left: 35px
+		position: relative
+		&::before
+			content: ''
+			background-image: url(../img/icons/path.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+			width: 6px
+			height: 10px
+			position: absolute
+			left: 14.5px
+			top: 50%
+			margin-top: -5px
+		&:first-child
+			padding-left: 0
+			&:before
+				display: none
+		&-last
+			.p-path__link
+				color: #a1a1a1
+				&:hover
+					text-decoration: none
+					color: #a1a1a1
+					opacity: 1
+
+.p-title
+	display: inline-block
+	color: #1e1e1e
+	font-size: 40px
+	line-height: 46px
+	letter-spacing: 1.3px
+	font-family: "CrimsonTextRegular", sans-serif
+	text-transform: uppercase
+
+.p-filter
+	&__title
+		color: #1a1a1a
+		letter-spacing: 1.2px
+		font-family: "CrimsonTextRegular", sans-serif
+		font-size: 14px
+		text-transform: uppercase
+		line-height: 18px
+		padding: 7px 0
+		border-bottom: 1px solid #ededed
+	&__list
+		padding-top: 11px
+		padding-bottom: 35px
+	&__item
+		display: block
+		width: 100%
+		padding-right: 28px
+		position: relative
+		margin: 5px 0
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__left
+		float: left
+		width: 50%
+		font-size: 13px
+		color: #a1a1a1
+		line-height: 15px
+		text-align: left
+	&__right
+		float: right
+		width: 50%
+		font-size: 13px
+		color: #1e1e1e
+		line-height: 15px
+		text-align: right
+	&__close
+		width: 9px
+		height: 9px
+		display: block
+		background-image: url(../img/icons/little-close.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		position: absolute
+		right: 0
+		top: 3px
+		&:hover
+			text-decoration: none
+			opacity: .5
+	&__wrapper
+		.p-filter__title
+			padding-right: 28px
+			position: relative
+		.p-filter__list
+			display: block
+	&__toggle
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		width: 28px
+		display: block
+		&::after
+			content: ''
+			width: 10px
+			height: 6px
+			background-image: url(../img/icons/arrow-toggle.png)
+			background-repeat: no-repeat
+			background-size: contain
+			background-position: center center
+			position: absolute
+			right: 0
+			top: 50%
+			margin-top: -3px
+			display: block
+			transform: rotate(-180deg)
+			-webkit-transform: rotate(-180deg)
+	&__toggle.active
+		&::after
+			transform: rotate(0deg)
+			-webkit-transform: rotate(0deg)
+	&__label
+		display: inline-block
+		padding-left: 23px
+		position: relative
+		font-size: 13px
+		line-height: 15px
+		color: #a1a1a1
+		cursor: pointer
+		-webkit-touch-callout: none
+		-webkit-user-select: none
+		-khtml-user-select: none
+		-moz-user-select: none
+		-ms-user-select: none
+		user-select: none
+		&::before
+			content: ''
+			width: 14px
+			height: 14px
+			display: block
+			border: 1px solid #cecece
+			position: absolute
+			left: 0
+			top: 1px
+	&__input
+		display: none
+		&:checked + label::before
+			background-image: url(../img/icons/check.png)
+			border-color: #1e1e1e
+			background-color: #1e1e1e
+			background-repeat: no-repeat
+			background-position: center center
+
+.p-catitem
+	padding-bottom: 9px
+	display: block
+	position: relative
+	cursor: pointer
+	&::after
+		content: ''
+		z-index: -1
+		background-color: #fff
+		display: block
+		left: -15px
+		right: -15px
+		bottom: -74px
+		top: -15px
+		display: none
+		width: auto
+		height: auto
+		border: 1px solid #efefef
+		position: absolute
+	&__top
+		height: 370px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+	&__title
+		margin-top: 13px
+		display: block
+		font-size: 14px
+		line-height: 16px
+		text-align: center
+		height: 16px
+		overflow: hidden
+		color: #a1a1a1
+		letter-spacing: .4px
+	&__price
+		display: block
+		margin-top: 9px
+		line-height: 19px
+		height: 19px
+		overflow: hidden
+		font-size: 16px
+		color: #1e1e1e
+		font-family: "RobotoCondensedBold", sans-serif
+		text-align: center
+		&::after
+			content: '₽'
+	&__hover
+		position: absolute
+		left: -15px
+		right: -15px
+		width: auto
+		top: 100%
+		padding-top: 10px
+		padding-bottom: 30px
+		z-index: 1
+		height: 74px
+		display: none
+		background-color: #fff
+		border-bottom: 1px solid #efefef
+		border-left: 1px solid #efefef
+		border-right: 1px solid #efefef
+	&__btn
+		height: 34px
+		display: block
+		line-height: 34px
+		background-color: #1e1e1e
+		width: 100%
+		max-width: 148px
+		text-align: center
+		font-family: "CrimsonTextRegular", sasns-serif
+		text-transform: uppercase
+		font-size: 14px
+		color: #fff
+		margin: 0 auto
+		&:hover
+			text-decoration: none
+			color: #fff
+			opacity: .5
+	&:hover
+		&::after
+			display: block
+		.p-catitem__hover
+			display: block
+
+.p-pagination
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__link
+		width: 30px
+		height: 30px
+		border-radius: 50%
+		display: block
+		line-height: 30px
+		text-align: center
+		background-color: transparent
+		font-size: 13px
+		color: #1e1e1e
+		position: relative
+		&:hover
+			text-decoration: none
+			color: #fff
+			background-color: #000
+	&__item
+		display: block
+		float: left
+		&-prev
+			margin-right: 30px
+			.p-pagination__link
+				opacity: .5
+				&::after
+					content: ''
+					display: block
+					width: 11px
+					height: 6px
+					background-image: url(../img/icons/arrow-toggle.png)
+					position: absolute
+					left: 50%
+					margin-left: -5.5px
+					top: 50%
+					margin-top: -3px
+					z-index: 1
+					transform: rotate(90deg)
+					-webkit-transform: rotate(90deg)
+				&:hover
+					opacity: 1
+					background-color: transparent
+		&-next
+			margin-left: 30px
+			.p-pagination__link
+				opacity: .5
+				&::after
+					content: ''
+					display: block
+					width: 11px
+					height: 6px
+					background-image: url(../img/icons/arrow-toggle.png)
+					position: absolute
+					left: 50%
+					margin-left: -5.5px
+					top: 50%
+					margin-top: -3px
+					z-index: 1
+					transform: rotate(-90deg)
+					-webkit-transform: rotate(-90deg)
+				&:hover
+					opacity: 1
+					background-color: transparent
+	&__item.active
+		.p-pagination__link
+			background-color: #1e1e1e
+			color: #fff
+
+.p-catsort
+	position: relative
+	text-align: right
+	font-size: 13px
+	color: #a1a1a1
+	line-height: 15px
+	&__text
+		display: inline-block
+		line-height: 15px
+		color: #1e1e1e
+		padding-right: 15px
+		position: relative
+		cursor: pointer
+		&::after
+			content: ''
+			width: 10px
+			height: 6px
+			background-image: url(../img/icons/arrow-toggle.png)
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: contain
+			position: absolute
+			display: block
+			right: 0
+			top: 50%
+			margin-top: -3px
+	&__list
+		position: absolute
+		right: 0
+		top: 100%
+		z-index: 1
+		background-color: #fff
+		text-align: left
+		width: 97px
+		padding-top: 5px
+		border: 1px solid #efefef
+		display: none
+	&__item
+		display: block
+		width: 100%
+		margin-bottom: 5px
+		padding-left: 5px
+		padding-right: 5px
+		cursor: pointer
+		&:hover
+			background-color: #efefef
