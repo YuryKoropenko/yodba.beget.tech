@@ -43,22 +43,21 @@ $(function() {
 		$(this).parent().parent().children('.p-filter__list').slideToggle(200);
 		return false;
 	});
-
-	/* Сортировка */
-	$('.p-catsort__text').on('click', function() {
-		$('.p-catsort__list').slideToggle(200);
+	$('.p-filter__mobbtn').on('click', function() {
+		$(this).toggleClass('active');
+		$(this).parent().children('.p-filter').slideToggle(200);
 		$(document).click(function(event) {
-			if ($(event.target).closest('.p-catsort__list').length) return;
-			$('.p-catsort__list').slideUp(200);
+			if ($(event.target).closest('.p-filter').length) return;
+			$('.p-filter__mobbtn').removeClass('active');
+			$('.p-filter').slideUp(200);
 			event.stopPropagation();
 		});
 		return false;
 	});
-	$('.p-catsort__item').on('click', function() {
-		var znach = $(this).attr('name');
-		var text = $(this).text();
-		$('.p-catsort__text').attr('name', znach);
-		$('.p-catsort__text').text(text);
-		$('.p-catsort__list').slideUp(200);
+
+	/* Сортировка */
+	$('.p-catsort__select').change( function() {
+		$('.p-catsort__hidden').html( $('.p-catsort__select').val() );
+		$('.p-catsort__select').width( $('.p-catsort__hidden').width() );
 	});
 });

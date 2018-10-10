@@ -52,6 +52,61 @@ input:-ms-input-placeholder {
   opacity: 1;
 }
 
+.ui-selectmenu-button.ui-button {
+  width: 100% !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  color: #1e1e1e !important;
+  border: 1px solid #cecece !important;
+  padding-left: 17px !important;
+  height: 40px !important;
+  border-radius: 0 !important;
+  padding-right: 40px !important;
+}
+
+.ui-selectmenu-button.ui-button:focus {
+  outline: none !important;
+}
+
+.ui-selectmenu-button.ui-button::after {
+  content: '';
+  width: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  background-image: url(../img/icons/arrow-toggle.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.ui-selectmenu-button.ui-button.ui-selectmenu-button-open::after {
+  transform: rotate(-180deg) !important;
+  -webkit-transform: rotate(-180deg) !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  border: none !important;
+  margin: 0 !important;
+  background-color: #a1a1a1 !important;
+}
+
+.ui-menu .ui-menu-item-wrapper {
+  padding: 12px 17px !important;
+  font-size: 13px !important;
+}
+
+.ui-selectmenu-icon {
+  display: none !important;
+}
+
+.ui-selectmenu-text {
+  line-height: 38px !important;
+  font-size: 13px !important;
+  color: #1e1e1e !important;
+}
+
 /* Внешние блоки */
 body {
   font-size: 16px;
@@ -179,6 +234,10 @@ body {
   padding-bottom: 42px;
 }
 
+.page__p-filter {
+  padding-bottom: 30px;
+}
+
 .page__p-catitem {
   padding-bottom: 20px;
 }
@@ -197,6 +256,14 @@ body {
 
 .page__p-catsort {
   padding-bottom: 27px;
+}
+
+.page__p-mobpagination {
+  padding-bottom: 80px;
+}
+
+.page__p-cardslider {
+  padding-bottom: 15px;
 }
 
 /* Подвал */
@@ -1230,52 +1297,208 @@ body {
   line-height: 15px;
 }
 
-.p-catsort__text {
-  display: inline-block;
-  line-height: 15px;
-  color: #1e1e1e;
+.p-catsort__select {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding-right: 15px;
   position: relative;
-  cursor: pointer;
+  background-image: url(../img/icons/arrow-toggle.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  font-size: 13px;
+  color: #1e1e1e;
 }
 
-.p-catsort__text::after {
-  content: '';
-  width: 10px;
-  height: 6px;
-  background-image: url(../img/icons/arrow-toggle.png);
+.p-catsort__select:focus {
+  outline: none;
+  width: auto;
+}
+
+.p-catsort__hidden {
+  display: inline-block;
+  visibility: hidden;
+  position: absolute;
+  top: -100%;
+  right: 0;
+}
+
+.p-cardslider {
+  padding-left: 183px;
+  position: relative;
+}
+
+.p-cardslider__item {
+  height: 660px;
+  width: 100%;
+  background-image: url(../img/card.png);
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
-  position: absolute;
+  background-size: cover;
   display: block;
-  right: 0;
-  top: 50%;
-  margin-top: -3px;
 }
 
-.p-catsort__list {
-  position: absolute;
-  right: 0;
-  top: 100%;
-  z-index: 1;
-  background-color: #fff;
-  text-align: left;
-  width: 97px;
-  padding-top: 5px;
-  border: 1px solid #efefef;
-  display: none;
+.p-cardslider__item:hover {
+  text-decoration: none;
 }
 
-.p-catsort__item {
-  display: block;
+.p-cardslider__item:focus {
+  outline: none;
+}
+
+.p-cardslider__little {
+  position: absolute;
+  left: 0;
+  width: 168px;
+  top: 0;
+}
+
+.p-cardslider__subitem {
   width: 100%;
-  margin-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  height: 210px;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 15px;
   cursor: pointer;
 }
 
-.p-catsort__item:hover {
-  background-color: #efefef;
+.p-cardslider__subitem.active {
+  opacity: .5;
+}
+
+.p-cardcontent__title {
+  display: block;
+  font-size: 20px;
+  line-height: 24px;
+  color: #1e1e1e;
+}
+
+.p-cardcontent__art {
+  display: block;
+  padding-top: 4px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #a1a1a1;
+}
+
+.p-cardcontent__price {
+  display: block;
+  padding-top: 16px;
+  color: #1e1e1e;
+  font-size: 20px;
+  font-family: "RobotoCondensedBold", sans-serif;
+}
+
+.p-cardcontent__price::after {
+  content: '₽';
+}
+
+.p-cardcontent__row {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
+.p-cardcontent__status {
+  display: inline-block;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+  color: #1e1e1e;
+  margin-right: 15px;
+  padding-left: 16px;
+  position: relative;
+  background-image: url(../img/icons/black-check.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.p-cardcontent__dostavka {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 15px;
+  color: #a1a1a1;
+}
+
+.p-cardcontent__label {
+  font-size: 13px;
+  color: #a1a1a1;
+  line-height: 15px;
+  display: block;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+.p-cardcontent__count {
+  width: 130px;
+  position: relative;
+  border: 1px solid #cecece;
+}
+
+.p-cardcontent__minus {
+  width: 40px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: url(../img/icons/minus.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-right: 1px solid #cecece;
+}
+
+.p-cardcontent__minus:hover {
+  text-decoration: none;
+}
+
+.p-cardcontent__minus:focus {
+  outline: none;
+}
+
+.p-cardcontent__countinput {
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: center;
+  height: 40px;
+  border: none;
+  line-height: 40px;
+  font-size: 13px;
+  color: #1e1e1e;
+}
+
+.p-cardcontent__countinput::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.p-cardcontent__countinput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.p-cardcontent__plus {
+  width: 40px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 1;
+  background-image: url(../img/icons/plus.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-left: 1px solid #cecece;
+}
+
+.p-cardcontent__plus:hover {
+  text-decoration: none;
+}
+
+.p-cardcontent__plus:focus {
+  outline: none;
 }

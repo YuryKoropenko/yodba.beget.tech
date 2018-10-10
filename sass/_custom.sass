@@ -42,3 +42,48 @@ input:-moz-placeholder
 input:-ms-input-placeholder
 	color:#a1a1a1
 	opacity: 1
+
+.ui-selectmenu-button.ui-button
+	width: 100% !important
+	padding: 0 !important
+	background-color: transparent !important
+	color: #1e1e1e !important
+	border: 1px solid #cecece !important
+	padding-left: 17px !important
+	height: 40px !important
+	border-radius: 0 !important
+	padding-right: 40px !important
+	&:focus
+		outline: none !important
+	&::after
+		content: ''
+		width: 40px
+		position: absolute
+		right: 0
+		top: 0
+		bottom: 0
+		z-index: 1
+		background-image: url(../img/icons/arrow-toggle.png)
+		background-repeat: no-repeat
+		background-position: center center
+
+.ui-selectmenu-button.ui-button.ui-selectmenu-button-open
+	&::after
+		transform: rotate(-180deg) !important
+		-webkit-transform: rotate(-180deg) !important
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover
+	border: none !important
+	margin: 0 !important
+	background-color: #a1a1a1 !important
+.ui-menu .ui-menu-item-wrapper
+	padding: 12px 17px !important
+	font-size: 13px !important
+
+.ui-selectmenu-icon
+	display: none !important
+
+.ui-selectmenu-text
+	line-height: 38px !important
+	font-size: 13px !important
+	color: #1e1e1e !important

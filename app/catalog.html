@@ -17,6 +17,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/jqueryuicustom/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
@@ -252,8 +253,11 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xl-3">
+					<div class="col-xl-3 col-lg-3 col-md-4 col-12">
 						<div class="page__p-filter">
+							<a href="#" class="p-filter__mobbtn">
+								<span>Фильтр</span>
+							</a>
 							<div class="p-filter">
 								<div class="p-filter__title">
 									Выбранные фильтры
@@ -405,29 +409,23 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-9">
+					<div class="col-xl-9 col-lg-9 col-md-8 col-12">
 						<div class="row">
 							<div class="col-md-12">
 								<div class="page__p-catsort">
 									<div class="p-catsort">
 										Сортировать по:
-										<span class="p-catsort__text" name="sort1">
-											Популярности
-											<ul class="p-catsort__list">
-												<li class="p-catsort__item" name="sort1">
-													Популярности
-												</li>
-												<li class="p-catsort__item" name="sort2">
-													Цене
-												</li>
-											</ul>
-										</span>
+										<select class="p-catsort__select">
+											<option selected="selected">Популярности</option>
+											<option>Цене</option>
+										</select>
+										<div class="p-catsort__hidden"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo.png);"></div>
@@ -445,7 +443,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
@@ -463,7 +461,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-2.png);"></div>
@@ -481,7 +479,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo.png);"></div>
@@ -499,7 +497,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
@@ -517,7 +515,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-4">
+							<div class="col-lg-4 col-md-6 col-6">
 								<div class="page__p-catitem">
 									<div class="p-catitem">
 										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-2.png);"></div>
@@ -538,7 +536,7 @@
 						</div>
 						<div class="row">
 							<div class="col-12">
-								<div class="page__p-pagination">
+								<div class="page__p-pagination hidden-xs">
 									<ul class="p-pagination">
 										<li class="p-pagination__item p-pagination__item-prev">
 											<a href="#" class="p-pagination__link"></a>
@@ -582,6 +580,34 @@
 											<a href="#" class="p-pagination__link"></a>
 										</li>
 									</ul>
+								</div>
+								<div class="page__p-mobpagination visible-xs">
+									<div class="p-mobpagination owl-carousel">
+										<div class="p-mobpagination__item">
+											1 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											2 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											3 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											4 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											5 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											6 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											7 страница <span>из 8</span>
+										</div>
+										<div class="p-mobpagination__item">
+											8 страница <span>из 8</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -707,24 +733,17 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/owlcarousel2/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jqueryuicustom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			/* Слайдер - главная странца */
-			$('.p-indexslider').owlCarousel({
-				loop:true,
+			$('.p-mobpagination').owlCarousel({
+				loop:false,
 				margin:0,
 				items:1,
-				responsive:{
-					0:{
-						dots:true,
-						nav:false
-					},
-					768:{
-						dots:false,
-						nav:true
-					}
-				}
+				dots:false,
+				nav: true
 			});
 		});
 	</script>

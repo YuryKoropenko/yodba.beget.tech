@@ -791,43 +791,180 @@
 	font-size: 13px
 	color: #a1a1a1
 	line-height: 15px
-	&__text
-		display: inline-block
-		line-height: 15px
-		color: #1e1e1e
+	&__select
+		border: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
 		padding-right: 15px
 		position: relative
-		cursor: pointer
-		&::after
-			content: ''
-			width: 10px
-			height: 6px
-			background-image: url(../img/icons/arrow-toggle.png)
-			background-repeat: no-repeat
-			background-position: center center
-			background-size: contain
-			position: absolute
-			display: block
-			right: 0
-			top: 50%
-			margin-top: -3px
-	&__list
+		background-image: url(../img/icons/arrow-toggle.png)
+		background-position: right center
+		background-repeat: no-repeat
+		font-size: 13px
+		color: #1e1e1e
+		&:focus
+			outline: none
+			width: auto
+	&__hidden
+		display: inline-block
+		visibility: hidden
 		position: absolute
+		top: -100%
 		right: 0
-		top: 100%
-		z-index: 1
-		background-color: #fff
-		text-align: left
-		width: 97px
-		padding-top: 5px
-		border: 1px solid #efefef
-		display: none
+
+.p-cardslider
+	padding-left: 168 + 15 + px
+	position: relative
+	&__big
 	&__item
+		height: 660px
+		width: 100%
+		background-image: url(../img/card.png)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		display: block
+		&:hover
+			text-decoration: none
+		&:focus
+			outline: none
+	&__little
+		position: absolute
+		left: 0
+		width: 168px
+		top: 0
+	&__subitem
+		width: 100%
+		height: 210px
+		display: block
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center center
+		margin-bottom: 15px
+		cursor: pointer
+	&__subitem.active
+		opacity: .5
+
+.p-cardcontent
+	&__title
+		display: block
+		font-size: 20px
+		line-height: 24px
+		color: #1e1e1e
+	&__art
+		display: block
+		padding-top: 4px
+		font-size: 13px
+		line-height: 15px
+		color: #a1a1a1
+	&__price
+		display: block
+		padding-top: 16px
+		color: #1e1e1e
+		font-size: 20px
+		font-family: "RobotoCondensedBold", sans-serif
+		&::after
+			content: '₽'
+	&__row
+		display: block
+		margin-top: 40px
+		margin-bottom: 24px
+	&__status
+		display: inline-block
+		display: inline-block
+		font-size: 13px
+		line-height: 15px
+		color: #1e1e1e
+		margin-right: 15px
+		padding-left: 16px
+		position: relative
+		background-image: url(../img/icons/black-check.png)
+		background-repeat: no-repeat
+		background-position: left center
+	&__dostavka
+		display: inline-block
+		font-size: 13px
+		line-height: 15px
+		color: #a1a1a1
+	&__label
+		font-size: 13px
+		color: #a1a1a1
+		line-height: 15px
 		display: block
 		width: 100%
-		margin-bottom: 5px
-		padding-left: 5px
-		padding-right: 5px
-		cursor: pointer
+		padding-bottom: 10px
+	&__select
+	&__count
+		width: 130px
+		position: relative
+		border: 1px solid #cecece
+	&__minus
+		width: 40px
+		left: 0
+		top: 0
+		bottom: 0
+		position: absolute
+		z-index: 1
+		background-image: url(../img/icons/minus.png)
+		background-repeat: no-repeat
+		background-position: center center
+		border-right: 1px solid #cecece
 		&:hover
-			background-color: #efefef
+			text-decoration: none
+		&:focus
+			outline: none
+	&__countinput
+		display: block
+		width: 100%
+		padding-left: 30px
+		padding-right: 30px
+		text-align: center
+		height: 40px
+		border: none
+		line-height: 40px
+		font-size: 13px
+		color: #1e1e1e
+		&::-webkit-outer-spin-button
+			-webkit-appearance: none;
+			margin: 0
+		&::-webkit-inner-spin-button
+			-webkit-appearance: none;
+			margin: 0
+	&__plus
+		width: 40px
+		right: 0
+		top: 0
+		bottom: 0
+		position: absolute
+		z-index: 1
+		background-image: url(../img/icons/plus.png)
+		background-repeat: no-repeat
+		background-position: center center
+		border-left: 1px solid #cecece
+		&:hover
+			text-decoration: none
+		&:focus
+			outline: none
+	&__btn
+	&__fav
+	&__help
+	&__accord
+	&__accorditem
+	&__accordbtn
+	&__accordcontent
+	&__soc
+	&__socitem
+	&__soclink
+
+.p-advantages
+	&__title
+	&__description
+
+.p-subtitle
+
+.p-cardlike
+	&__item
+		.p-catitem
+
+.p-lastitem
