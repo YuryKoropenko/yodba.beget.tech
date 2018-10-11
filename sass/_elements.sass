@@ -1022,6 +1022,29 @@
 			top: -1px
 	&__accord
 		margin-top: 46px
+		&-page
+			margin-top: 0
+			padding-bottom: 82px
+			max-width: 816px
+			width: 100%
+			.p-cardcontent__accordbtn
+				font-size: 16px
+				font-family: "RobotoCondensedRegular", sans-serif
+				text-transform: none
+				padding-right: 20px !important
+			.p-cardcontent__accordcontent
+				padding-bottom: 32px
+				border-bottom: 1px solid #ededed
+				font-size: 13px
+				line-height: 20px
+			.p-cardcontent__accordbtn.active
+				border-color: transparent
+				font-family: "RobotoCondensedBold", sans-serif
+			.p-cardcontent__accorditem:last-child
+				.p-cardcontent__accordbtn
+					border-color: transparent
+				.p-cardcontent__accordcontent
+					border: none !important
 	&__accorditem
 	&__accordbtn
 		font-size: 14px
@@ -1184,3 +1207,212 @@
 	&:hover
 		text-decoration: none
 		opacity: .5
+
+.p-content
+	h1
+	h2
+	h3
+	h4
+		text-transform: uppercase
+		display: block
+		color: #1e1e1e
+		font-size: 14px
+		line-height: 18px
+		font-family: "CrimsonTextRegular", sans-serif
+		width: 100%
+		margin-bottom: 15px
+		letter-spacing: 1px
+	p
+		display: block
+		width: 100%
+		line-height: 20px
+		font-size: 13px
+		font-family: "RobotoLight", sans-serif
+		color: #a1a1a1
+		margin-bottom: 15px
+	b, strong
+	ul
+		margin-bottom: 20px
+	li
+		display: block
+		padding-left: 14px
+		font-size: 13px
+		line-height: 20px
+		position: relative
+		font-family: "RobotoLight"
+		color: #a1a1a1
+		margin-bottom: 20px
+		&::before
+			content: ''
+			display: block
+			width: 6px
+			height: 6px
+			border: 1px solid #a1a1a1
+			border-radius: 50%
+			position: absolute
+			left: 0
+			top: 6px
+		&:last-child
+			margin-bottom: 0
+	a
+
+.p-welcome
+	display: block
+	color: #a1a1a1
+	font-size: 13px
+	line-height: 20px
+	display: block
+
+.p-lcab
+	display: block
+	padding: 32px 39px 27px
+	background-color: #f4f4f4
+	&__title
+		font-family: "CrimsonTextRegular", sans-serif
+		font-size: 20px
+		letter-spacing: 1.5px
+		text-transform: uppercase
+		line-height: 26px
+		height: 26px
+		overflow: hidden
+		display: inline-block
+		color: #1a1a1a
+		position: relative
+		&::after
+			content: ''
+			height: 1px
+			left: 0
+			right: 0
+			position: absolute
+			bottom: 0
+			display: block
+			background-color: #1a1a1a
+			z-index: 1
+	&__description
+		display: block
+		margin-top: 2px
+		font-size: 13px
+		line-height: 20px
+		height: 20px
+		overflow: hidden
+		color: #a1a1a1
+	&__row
+		margin-bottom: 60px
+	&:hover
+		text-decoration: none
+		color: inherit
+
+.p-payment
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	-webkit-flex-wrap: wrap
+	-ms-flex-wrap: wrap
+	flex-wrap: wrap
+	&__item
+		height: 44px
+		display: block
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		margin-right: 40px
+		&:last-child
+			margin-right: 0
+	&__img
+		display: block
+
+.p-order
+	&__title
+		display: block
+		margin-bottom: 19px
+		text-transform: uppercase
+		font-size: 16px
+		font-family: "CrimsonTextRegular", sans-serif
+		letter-spacing: 1.1px
+		line-height: 21px
+	&__item
+		.col-lg-2
+			text-align: right
+	&__img
+		display: block
+		max-width: 100%
+		width: 100%
+		height: auto
+	&__name
+		display: inline-block
+		font-size: 20px
+		color: #1e1e1e
+		line-height: 24px
+		&:hover
+			color: #1e1e1e
+			text-decoration: none
+			opacity: .5
+	&__art
+		display: block
+		margin-top: 4px
+		font-size: 13px
+		color: #a1a1a1
+		line-height: 15px
+	&__wrapper
+		display: inline-block
+		text-align: left
+	&__label
+		color: #a1a1a1
+		font-size: 13px
+		display: block
+		line-height: 15px
+	&__value
+		margin-top: 5px
+		color: #1e1e1e
+		font-size: 14px
+		line-height: 16px
+	&__value-price
+		&::after
+			content: '₽'
+
+.p-sum
+	padding: 45px 40px 42px
+	background-color: #f4f4f4
+	&__list
+		padding-bottom: 13px
+		border-bottom: 1px solid #e2e2e2
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__left
+		width: 50%
+		float: left
+	&__label
+		font-size: 13px
+		color: #1e1e1e
+		line-height: 18px
+		margin-bottom: 15px
+		&-bold
+			font-family: "RobotoCondensedBold", sans-serif
+	&__right
+		width: 50%
+		text-align: right
+		float: right
+		&-wp
+			display: inline-block
+			text-align: left
+	&__price
+		font-size: 14px
+		line-height: 18px
+		margin-bottom: 15px
+		&-bold
+			font-family: "RobotoCondensedBold", sans-serif
+			font-size: 16px
+		&::after
+			content: '₽'
