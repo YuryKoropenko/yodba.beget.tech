@@ -60,4 +60,17 @@ $(function() {
 		$('.p-catsort__hidden').html( $('.p-catsort__select').val() );
 		$('.p-catsort__select').width( $('.p-catsort__hidden').width() );
 	});
+
+	/* Акордион - карточка товара */
+	$('.p-cardcontent__accordbtn').on('click', function() {
+		if($(this).hasClass('active') == true) {
+			return false;
+		} else {
+			$('.p-cardcontent__accordbtn').removeClass('active');
+			$('.p-cardcontent__accordcontent').slideUp(200);
+			$(this).toggleClass('active');
+			$(this).parent().children('.p-cardcontent__accordcontent').slideToggle(200);
+			return false;
+		}
+	});
 });

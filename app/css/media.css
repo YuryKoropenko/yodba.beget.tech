@@ -29,6 +29,21 @@
   .f-nav__item {
     padding-left: 30px;
   }
+  .page__p-cardslider {
+    padding-bottom: 30px;
+  }
+  .page__p-cardcontent {
+    padding-bottom: 30px;
+  }
+  .p-cardcontent__soc {
+    padding-top: 30px;
+  }
+  .page__p-advantages {
+    margin-bottom: 30px;
+  }
+  .p-lastitem {
+    height: 210px;
+  }
   /**/
 }
 
@@ -331,6 +346,143 @@
   .p-catitem__hover {
     z-index: 3;
   }
+  .page__p-cardslider {
+    display: none;
+  }
+  .page__p-cardslidermob {
+    margin-bottom: 28px;
+  }
+  .p-cardslidermob__item {
+    height: 436px;
+    width: 100%;
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+  .p-cardslidermob .owl-dots {
+    font-size: 0;
+    position: absolute;
+    left: 17px;
+    bottom: 18px;
+    z-index: 1;
+  }
+  .p-cardslidermob .owl-dots span {
+    display: none;
+  }
+  .p-cardslidermob .owl-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    padding: 0 !important;
+    background-color: #232323 !important;
+    display: inline-block;
+    margin: 0 3px;
+    opacity: .4;
+  }
+  .p-cardslidermob .owl-dot.active {
+    opacity: 1 !important;
+  }
+  .p-cardcontent__row {
+    margin-top: 17px;
+  }
+  .p-cardcontent__status {
+    margin-right: 0;
+    display: block;
+  }
+  .p-cardcontent__dostavka {
+    display: block;
+  }
+  .ui-selectmenu-button.ui-button {
+    margin-bottom: 21px;
+  }
+  .p-cardcontent__count {
+    margin-bottom: 24px;
+  }
+  .p-cardcontent__fav {
+    margin: 15px 0;
+  }
+  .p-cardcontent__help {
+    margin-top: 10px;
+  }
+  .p-advantages {
+    text-align: center !important;
+    padding: 29px 38px 22px;
+  }
+  .page__p-advantagesmob {
+    padding-bottom: 59px;
+  }
+  .p-advantagesmob {
+    padding-bottom: 20px;
+  }
+  .p-advantagesmob .owl-dots {
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  .p-advantagesmob .owl-dots span {
+    display: none;
+  }
+  .p-advantagesmob .owl-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    padding: 0 !important;
+    background-color: #232323 !important;
+    display: inline-block;
+    margin: 0 3px;
+    opacity: .4;
+  }
+  .p-advantagesmob .owl-dot.active {
+    opacity: 1 !important;
+  }
+  .page__p-subtitle {
+    margin-bottom: 23px;
+  }
+  .p-cardlike {
+    padding-bottom: 20px;
+  }
+  .p-cardlike .owl-dots {
+    font-size: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  .p-cardlike .owl-dots span {
+    display: none;
+  }
+  .p-cardlike .owl-dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    padding: 0 !important;
+    background-color: #232323 !important;
+    display: inline-block;
+    margin: 0 3px;
+    opacity: .4;
+  }
+  .p-cardlike .owl-dot.active {
+    opacity: 1 !important;
+  }
+  .page__p-cardlike {
+    padding-bottom: 59px;
+  }
+  .p-lastitem {
+    height: 132px;
+  }
+  .page__p-lastitem {
+    padding-bottom: 80px;
+  }
   /**/
 }
 
@@ -361,6 +513,9 @@
     display: none;
   }
   .p-filter__mobbtn {
+    display: none;
+  }
+  .page__p-cardslidermob {
     display: none;
   }
   /**/

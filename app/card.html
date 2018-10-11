@@ -17,6 +17,7 @@
 	<!-- Styles -->
 	<link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="libs/owlcarousel2/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/fancybox3/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="libs/jqueryuicustom/jquery-ui.min.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -249,7 +250,14 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xl-7">
+					<div class="col-xl-7 col-lg-7">
+						<div class="page__p-cardslidermob">
+							<div class="p-cardslidermob owl-carousel">
+								<a href="img/card.png" data-fancybox="mobcard-images" class="p-cardslidermob__item" style="background-image: url(img/card.png);"></a>
+								<a href="img/index-slider-mob.png" data-fancybox="mobcard-images" class="p-cardslidermob__item" style="background-image: url(img/index-slider-mob.png);"></a>
+								<a href="img/card.png" data-fancybox="mobcard-images" class="p-cardslidermob__item" style="background-image: url(img/card.png);"></a>
+							</div>
+						</div>
 						<div class="page__p-cardslider">
 							<div class="p-cardslider">
 								<div class="p-cardslider__big">
@@ -263,7 +271,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-xl-5">
+					<div class="col-xl-5 col-lg-5">
 						<div class="page__p-cardcontent">
 							<div class="p-cardcontent">
 								<h1 class="p-cardcontent__title">
@@ -284,7 +292,7 @@
 									</span>
 								</div>
 								<div class="row">
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-md-6">
 										<label for="select1" class="p-cardcontent__label">
 											Размер:
 										</label>
@@ -295,7 +303,7 @@
 											<option>S</option>
 										</select>
 									</div>
-									<div class="col-lg-6">
+									<div class="col-lg-6 col-md-6">
 										<label for="select1" class="p-cardcontent__label">
 											Количество:
 										</label>
@@ -307,12 +315,12 @@
 									</div>
 								</div>
 								<div class="row">
-									<div class="col-lg-7">
+									<div class="col-lg-7 col-md-7">
 										<a href="#" class="p-cardcontent__btn">
 											В корзину
 										</a>
 									</div>
-									<div class="col-lg-5">
+									<div class="col-lg-5 col-md-5">
 										<a href="#" class="p-cardcontent__fav">
 											В избранное
 										</a>
@@ -323,8 +331,24 @@
 								</a>
 								<div class="p-cardcontent__accord">
 									<div class="p-cardcontent__accorditem">
-										<a href="#" class="p-cardcontent__accordbtn">
+										<a href="#" class="p-cardcontent__accordbtn active">
 											Описание
+										</a>
+										<div class="p-cardcontent__accordcontent" style="display: block;">
+											Уникальность майки «Eros» создаст превосходство по отношению<br />к другим. Мужская спортивная майка свободного кроя. Выполнена<br />в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.<br />Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
+										</div>
+									</div>
+									<div class="p-cardcontent__accorditem">
+										<a href="#" class="p-cardcontent__accordbtn">
+											Доставка и возврат
+										</a>
+										<div class="p-cardcontent__accordcontent">
+											Уникальность майки «Eros» создаст превосходство по отношению<br />к другим. Мужская спортивная майка свободного кроя. Выполнена<br />в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.<br />Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
+										</div>
+									</div>
+									<div class="p-cardcontent__accorditem">
+										<a href="#" class="p-cardcontent__accordbtn">
+											Оплата
 										</a>
 										<div class="p-cardcontent__accordcontent">
 											Уникальность майки «Eros» создаст превосходство по отношению<br />к другим. Мужская спортивная майка свободного кроя. Выполнена<br />в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.<br />Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
@@ -333,7 +357,7 @@
 								</div>
 								<div class="p-cardcontent__soc">
 									Поделиться
-									<ul class="p-cardcontent__soc">
+									<ul class="p-cardcontent__soclist">
 										<li class="p-cardcontent__socitem">
 											<a href="#" class="p-cardcontent__soclink" style="background-image: url(img/icons/vk.png);"></a>
 										</li>
@@ -355,7 +379,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row hidden-xs">
 					<div class="col-lg-4">
 						<div class="page__p-advantages">
 							<div class="p-advantages">
@@ -396,85 +420,142 @@
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="page__p-subtitle">
-						<b class="p-subtitle">
-							Вам может понравиться
-						</b>
-					</div>
-				</div>
-				<div class="row">
-					<div class="page__p-cardlike">
-						<div class="p-cardlike">
-							<div class="p-cardlike__item">
-								<div class="p-catitem">
-									<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
-									<h2 class="p-catitem__title">
-										Футболка &laquo;Fork&raquo;
-									</h2>
-									<span class="p-catitem__price">
-										2 200
-									</span>
+				<div class="row visible-xs">
+					<div class="col-12">
+						<div class="page__p-advantagesmob">
+							<div class="p-advantagesmob owl-carousel">
+								<div class="p-advantagesmob__item">
+									<div class="p-advantages">
+										<div class="p-advantages__title">
+											Гарантия качества
+										</div>
+										<p class="p-advantages__description">
+											Уникальность майки «Eros» создаст превосходство по отношению к другим. Мужская спортивная майка свободного кроя. Выполнена в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.
+											Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="p-cardlike__item">
-								<div class="p-catitem">
-									<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
-									<h2 class="p-catitem__title">
-										Футболка &laquo;Fork&raquo;
-									</h2>
-									<span class="p-catitem__price">
-										2 200
-									</span>
+								<div class="p-advantagesmob__item">
+									<div class="p-advantages">
+										<div class="p-advantages__title">
+											Гарантия качества
+										</div>
+										<p class="p-advantages__description">
+											Уникальность майки «Eros» создаст превосходство по отношению к другим. Мужская спортивная майка свободного кроя. Выполнена в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.
+											Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
+										</p>
+									</div>
 								</div>
-							</div>
-							<div class="p-cardlike__item">
-								<div class="p-catitem">
-									<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
-									<h2 class="p-catitem__title">
-										Футболка &laquo;Fork&raquo;
-									</h2>
-									<span class="p-catitem__price">
-										2 200
-									</span>
-								</div>
-							</div>
-							<div class="p-cardlike__item">
-								<div class="p-catitem">
-									<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
-									<h2 class="p-catitem__title">
-										Футболка &laquo;Fork&raquo;
-									</h2>
-									<span class="p-catitem__price">
-										2 200
-									</span>
-								</div>
-							</div>
-							<div class="p-cardlike__item">
-								<div class="p-catitem">
-									<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
-									<h2 class="p-catitem__title">
-										Футболка &laquo;Fork&raquo;
-									</h2>
-									<span class="p-catitem__price">
-										2 200
-									</span>
+								<div class="p-advantagesmob__item">
+									<div class="p-advantages">
+										<div class="p-advantages__title">
+											Гарантия качества
+										</div>
+										<p class="p-advantages__description">
+											Уникальность майки «Eros» создаст превосходство по отношению к другим. Мужская спортивная майка свободного кроя. Выполнена в классическом черном цвете без лишних деталей. На груди расположен белый логотип «Sarman». На спине вставка для приталивания майки.
+											Тонкая, но прочная ткань отлично выводит влагу, позволяя коже дышать на протяжении всего тренировочного процесса. Силуэт атлета меняется за счет правильного кроя и подчеркнет ваши достоинства наработанные тренировками. Удобство,комфорт и имидж это главное в коллекции Alpha.
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="page__p-subtitle">
-						<b class="p-subtitle">
-							Недавно просматриваемое
-						</b>
+					<div class="col-12">
+						<div class="page__p-subtitle">
+							<b class="p-subtitle">
+								Вам может понравиться
+							</b>
+						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-lg-2">
+					<div class="col-12">
+						<div class="page__p-cardlike">
+							<div class="p-cardlike owl-carousel">
+								<div class="p-cardlike__item">
+									<a href="#" class="p-catitem">
+										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
+										<h2 class="p-catitem__title">
+											Футболка &laquo;Fork&raquo;
+										</h2>
+										<span class="p-catitem__price">
+											2 200
+										</span>
+									</a>
+								</div>
+								<div class="p-cardlike__item">
+									<a href="#" class="p-catitem">
+										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
+										<h2 class="p-catitem__title">
+											Футболка &laquo;Fork&raquo;
+										</h2>
+										<span class="p-catitem__price">
+											2 200
+										</span>
+									</a>
+								</div>
+								<div class="p-cardlike__item">
+									<a href="#" class="p-catitem">
+										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
+										<h2 class="p-catitem__title">
+											Футболка &laquo;Fork&raquo;
+										</h2>
+										<span class="p-catitem__price">
+											2 200
+										</span>
+									</a>
+								</div>
+								<div class="p-cardlike__item">
+									<a href="#" class="p-catitem">
+										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
+										<h2 class="p-catitem__title">
+											Футболка &laquo;Fork&raquo;
+										</h2>
+										<span class="p-catitem__price">
+											2 200
+										</span>
+									</a>
+								</div>
+								<div class="p-cardlike__item">
+									<a href="#" class="p-catitem">
+										<div class="p-catitem__top" style="background-image: url(img/catalog-photo-1.png);"></div>
+										<h2 class="p-catitem__title">
+											Футболка &laquo;Fork&raquo;
+										</h2>
+										<span class="p-catitem__price">
+											2 200
+										</span>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12">
+						<div class="page__p-subtitle">
+							<b class="p-subtitle">
+								Недавно просматриваемое
+							</b>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-2 col-lg-3 col-md-3 col-4">
 						<div class="page__p-lastitem">
-							<a href="#" class="p-lastitem"></a>
+							<a href="#" class="p-lastitem" style="background-image: url(img/catalog-photo.png);"></a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-3 col-md-3 col-4">
+						<div class="page__p-lastitem">
+							<a href="#" class="p-lastitem" style="background-image: url(img/catalog-photo-1.png);"></a>
+						</div>
+					</div>
+					<div class="col-xl-2 col-lg-3 col-md-3 col-4">
+						<div class="page__p-lastitem">
+							<a href="#" class="p-lastitem" style="background-image: url(img/catalog-photo-2.png);"></a>
 						</div>
 					</div>
 				</div>
@@ -598,6 +679,7 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/owlcarousel2/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/fancybox3/jquery.fancybox.min.js"></script>
 	<script type="text/javascript" src="libs/jqueryuicustom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<script type="text/javascript">
@@ -614,7 +696,56 @@
 				return false;
 			});
 
+			/* Галерея - карточка товара */
+			$('.p-cardslider__item').fancybox();
+
+			/* Селект - размер */
 			$('.p-cardcontent__select').selectmenu();
+
+			/* Вам может понравиться - слайдер карточка товара */
+			$('.p-cardlike').owlCarousel({
+				loop:false,
+				margin:15,
+				responsive:{
+					0:{
+						items:2,
+						dots:true,
+						nav:false
+					},
+					768:{
+						items:3,
+						dots:false,
+						nav:true
+					},
+					992:{
+						items:4,
+						dots:false,
+						nav:true
+					}
+				}
+			});
+
+			/* мобильный слайдер для карточки товара */
+			$('.p-cardslidermob').owlCarousel({
+				loop:false,
+				margin:0,
+				items:1,
+				dots:true,
+				nav:false
+			});
+
+			/*popup для слайдера*/
+			$('.p-cardslidermob__item').fancybox();
+
+			/* мобильный слайдер с преимущеставми */
+			$('.p-advantagesmob').owlCarousel({
+				loop:false,
+				margin:0,
+				items:1,
+				dots:true,
+				nav:false
+			});
+
 		});
 	</script>
 	<!-- End_Scripts -->
