@@ -52,6 +52,26 @@ input:-ms-input-placeholder {
   opacity: 1;
 }
 
+textarea::-webkit-input-placeholder {
+  color: #a1a1a1;
+  opacity: 1;
+}
+
+textarea::-moz-placeholder {
+  color: #a1a1a1;
+  opacity: 1;
+}
+
+textarea:-moz-placeholder {
+  color: #a1a1a1;
+  opacity: 1;
+}
+
+textarea:-ms-input-placeholder {
+  color: #a1a1a1;
+  opacity: 1;
+}
+
 .ui-selectmenu-button.ui-button {
   width: 100% !important;
   padding: 0 !important;
@@ -105,6 +125,10 @@ input:-ms-input-placeholder {
   line-height: 38px !important;
   font-size: 13px !important;
   color: #1e1e1e !important;
+}
+
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+  display: none;
 }
 
 /* Внешние блоки */
@@ -301,6 +325,14 @@ body {
 
 .page__p-payment {
   padding-bottom: 20px;
+}
+
+.page__p-order {
+  padding-bottom: 50px;
+}
+
+.page__p-orderform {
+  padding-bottom: 35px;
 }
 
 /* Подвал */
@@ -2147,4 +2179,106 @@ body {
 
 .p-sum__price::after {
   content: '₽';
+}
+
+.p-sum__sum {
+  padding-top: 19px;
+}
+
+.p-sum__sum::before {
+  content: '';
+  display: table;
+}
+
+.p-sum__sum::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.p-sum__sumleft {
+  font-size: 13px;
+  line-height: 15px;
+  padding-top: 10px;
+  display: block;
+  color: #1e1e1e;
+  text-align: left;
+  width: 50%;
+  float: left;
+  font-family: "RobotoCondensedBold", sans-serif;
+}
+
+.p-sum__sumright {
+  float: right;
+  width: 50%;
+  text-align: right;
+  font-size: 24px;
+  color: #1e1e1e;
+  line-height: 28px;
+  font-family: "RobotoCondensedBold", sans-serif;
+}
+
+.p-sum__sumright::after {
+  content: '₽';
+}
+
+.p-orderform {
+  margin-bottom: 15px;
+}
+
+.p-orderform__input {
+  height: 40px;
+  width: 100%;
+  display: block;
+  border: 1px solid #cecece;
+  line-height: 38px;
+  padding: 0 17px;
+  font-size: 13px;
+}
+
+.p-orderform__textarea {
+  height: 80px;
+  width: 100%;
+  display: block;
+  border: 1px solid #cecece;
+  line-height: 15px;
+  padding: 13px 17px;
+  font-size: 13px;
+  resize: none;
+}
+
+.p-orderform__textarea:focus {
+  outline: none;
+}
+
+.p-orderform__check label {
+  padding-left: 34px;
+  color: #a1a1a1;
+  font-size: 11px;
+  display: block;
+  position: relative;
+}
+
+.p-orderform__check label::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  display: block;
+  border: 1px solid #cecece;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -7px;
+}
+
+.p-orderform__check input {
+  display: none;
+}
+
+.p-orderform__check input:checked + label::before {
+  background-image: url(../img/icons/check.png);
+  border-color: #1e1e1e;
+  background-color: #1e1e1e;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

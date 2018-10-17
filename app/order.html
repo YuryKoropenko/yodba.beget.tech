@@ -308,6 +308,91 @@
 								</div>
 							</div>
 						</div>
+						<div class="page__p-orderform">
+							<div class="p-order__title">
+								Доставка
+							</div>
+							<div class="p-orderform">
+								<select name="" id="" class="p-orderform__select">
+									<option value="" disabled selected>Город</option>
+									<option value="">Москва</option>
+									<option value="">Санкт-Петербург</option>
+									<option value="">Казань</option>
+									<option value="">Екатеринбург</option>
+									<option value="">Нижний Новгород</option>
+								</select>
+							</div>
+							<div class="p-orderform">
+								<select name="" id="" class="p-orderform__select">
+									<option value="" selected>Самовывоз</option>
+									<option value="">Почта</option>
+								</select>
+							</div>
+						</div>
+						<div class="page__p-orderform">
+							<div class="p-order__title">
+								Способ оплаты
+							</div>
+							<div class="p-orderform">
+								<select name="" id="" class="p-orderform__select">
+									<option value="" selected>Банковской картой Visa, MasterCard или Maestro</option>
+									<option value="">WebMoney</option>
+								</select>
+							</div>
+						</div>
+						<div class="page__p-orderform">
+							<div class="p-order__title">
+								Персональная информация
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="p-orderform">
+										<input type="text" class="p-orderform__input" placeholder="Имя">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="p-orderform">
+										<input type="text" class="p-orderform__input" placeholder="Фамилия">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="p-orderform">
+										<input type="text" class="p-orderform__input" placeholder="Контактный телефон">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="p-orderform">
+										<input type="text" class="p-orderform__input" placeholder="Адрес электронной почты">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-12">
+									<div class="p-orderform">
+										<textarea class="p-orderform__textarea" placeholder="Комментарий к заказу"></textarea>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="page__p-orderform">
+							<div class="row">
+								<div class="col-md-7">
+									<div class="p-orderform__check">
+										<input id="oform-zak" type="checkbox" checked>
+										<label for="oform-zak">
+											Нажимая кнопку «Оформить заказ», я даю свое согласие на обработку моих персональных данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для целей, определенных в Согласии на обработку персональных данных
+										</label>
+									</div>
+								</div>
+								<div class="col-md-5">
+									<a href="#" class="p-cardcontent__btn">
+										Оформить заказ
+									</a>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-3">
 						<div class="page__p-sum">
@@ -330,6 +415,14 @@
 												500
 											</div>
 										</div>
+									</div>
+								</div>
+								<div class="p-sum__sum">
+									<div class="p-sum__sumleft">
+										Итого
+									</div>
+									<div class="p-sum__sumright">
+										2 400
 									</div>
 								</div>
 							</div>
@@ -456,7 +549,13 @@
 	<!-- Scripts -->
 	<script type="text/javascript" src="libs/jquery/jquery-3.3.1.min.js"></script>
 	<script type="text/javascript" src="libs/owlcarousel2/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="libs/jqueryuicustom/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	<!-- End_Scripts -->
+	<script>
+		$(document).ready(function() {
+			$('.p-orderform__select').selectmenu();
+		});
+	</script>
 </body>
 </html>

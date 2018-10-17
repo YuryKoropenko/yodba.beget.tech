@@ -1416,3 +1416,79 @@
 			font-size: 16px
 		&::after
 			content: '₽'
+	&__sum
+		padding-top: 19px
+		&::before
+			content: ''
+			display: table
+		&::after
+			content: ''
+			display: table
+			clear: both
+	&__sumleft
+		font-size: 13px
+		line-height: 15px
+		padding-top: 10px
+		display: block
+		color: #1e1e1e
+		text-align: left
+		width: 50%
+		float: left
+		font-family: "RobotoCondensedBold", sans-serif
+	&__sumright
+		float: right
+		width: 50%
+		text-align: right
+		font-size: 24px
+		color: #1e1e1e
+		line-height: 28px
+		font-family: "RobotoCondensedBold", sans-serif
+		&::after
+			content: '₽'
+
+.p-orderform
+	margin-bottom: 15px
+	&__input
+		height: 40px
+		width: 100%
+		display: block
+		border: 1px solid #cecece
+		line-height: 38px
+		padding: 0 17px
+		font-size: 13px
+	&__textarea
+		height: 80px
+		width: 100%
+		display: block
+		border: 1px solid #cecece
+		line-height: 15px
+		padding: 13px 17px
+		font-size: 13px
+		resize: none
+		&:focus
+			outline: none
+	&__check
+		label
+			padding-left: 34px
+			color: #a1a1a1
+			font-size: 11px
+			display: block
+			position: relative
+			&::before
+				content: ''
+				width: 14px
+				height: 14px
+				display: block
+				border: 1px solid #cecece
+				position: absolute
+				left: 0
+				top: 50%
+				margin-top: -7px
+		input
+			display: none
+			&:checked + label::before
+				background-image: url(../img/icons/check.png)
+				border-color: #1e1e1e
+				background-color: #1e1e1e
+				background-repeat: no-repeat
+				background-position: center center
