@@ -1337,7 +1337,15 @@
 		font-family: "CrimsonTextRegular", sans-serif
 		letter-spacing: 1.1px
 		line-height: 21px
+	&__description
+		display: block
+		font-size: 13px
+		line-height: 20px
+		font-family: "RobotoLight", sans-serif
+		color: #a1a1a1
+		margin-bottom: 20px
 	&__item
+		margin-bottom: 15px
 		.col-lg-2
 			text-align: right
 	&__img
@@ -1492,3 +1500,177 @@
 				background-color: #1e1e1e
 				background-repeat: no-repeat
 				background-position: center center
+
+.p-comein
+	background-color: #f4f4f4
+	padding: 60px 50px 65px
+	&__title
+		margin-bottom: 27px
+		color: #1e1e1e
+		font-size: 16px
+		line-height: 21px
+		text-transform: uppercase
+	&__input
+		display: block
+		width: 100%
+		margin-bottom: 15px
+		height: 40px
+		border: 1px solid #cecece
+		line-height: 38px
+		background-color: #fff
+		padding: 0 17px
+		font-size: 13px
+	&__btn
+		height: 38px
+		line-height: 38px
+		font-size: 14px
+		margin-top: 10px
+	&__rememberpass
+		text-align: right
+		margin-top: 10px
+		a
+			display: inline-block
+			line-height: 15px
+			margin: 11px 0
+			color: #1e1e1e
+			font-size: 13.5px
+			text-decoration: underline
+			&:hover
+				text-decoration: none
+				color: #1e1e1e
+
+.p-mobcomein
+	display: block
+	width: 100%
+	height: 40px
+	line-height: 40px
+	background-color: #f4f4f4
+	text-align: center
+	font-size: 13px
+	color: #1e1e1e
+	&:hover
+		text-decoration: none
+		color: #1e1e1e
+
+.p-favourites
+	&__item
+		padding-left: 40px
+		position: relative
+		min-height: 192px
+		padding-bottom: 31px
+		margin-bottom: 30px
+		border-bottom: 1px solid #ededed
+	&__check
+		position: absolute
+		left: 0
+		top: 50%
+		margin-top: -22px
+		label
+			width: 14px
+			height: 14px
+			color: #a1a1a1
+			font-size: 11px
+			display: block
+			position: relative
+			cursor: pointer
+			&::before
+				content: ''
+				width: 14px
+				height: 14px
+				display: block
+				border: 1px solid #cecece
+				position: absolute
+				left: 0
+				top: 0
+				right: 0
+				bottom: 0
+		input
+			display: none
+			&:checked + label::before
+				background-image: url(../img/icons/check.png)
+				border-color: #1e1e1e
+				background-color: #1e1e1e
+				background-repeat: no-repeat
+				background-position: center center
+	.p-order__img
+		width: auto
+		max-height: 160px
+		max-width: 100%
+	.p-order__name
+		font-size: 18px
+		line-height: 21px
+	.p-order__art
+		margin-bottom: 24px
+	.p-cardcontent__count
+		margin-bottom: 0
+	.ui-selectmenu-button
+		max-width: 194px
+	&__price
+		font-size: 14px
+		color: #1e1e1e
+		line-height: 40px
+		display: block
+		&::after
+			content: ' ₽'
+	&__wp
+		margin-top: 64px
+		&-last
+			margin-top: 87px
+	&__close
+		width: 13px
+		height: 13px
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: contain
+		display: block
+		margin: 16px auto 21px
+		background-image: url(../img/icons/close.png)
+		&:hover
+			text-decoration: none
+			opacity: .5
+
+.p-share
+	text-decoration: underline
+	font-size: 13px
+	color: #1e1e1e
+	line-height: 15px
+	display: inline-block
+	&:hover
+		text-decoration: none
+		color: #1e1e1e
+
+.p-totalcost
+	width: 100%
+	max-width: 210px
+	&::before
+		content: ''
+		display: table
+	&::after
+		content: ''
+		display: table
+		clear: both
+	&__title
+		line-height: 14px
+		font-size: 12px
+		color: #a6a6a6
+		display: block
+		float: left
+	&__price
+		line-height: 14px
+		font-size: 12px
+		display: block
+		color: #a6a6a6
+		font-family: "RobotoCondensedBold"
+		float: right
+		&::after
+			content: ' ₽'
+
+.p-placinganorder
+	text-decoration: underline
+	font-size: 13px
+	color: #1e1e1e
+	line-height: 15px
+	display: inline-block
+	&:hover
+		text-decoration: none
+		color: #1e1e1e

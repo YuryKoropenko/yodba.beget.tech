@@ -47,6 +47,15 @@
   .p-lastitem {
     height: 210px;
   }
+  .page__p-orderform {
+    padding-bottom: 15px;
+  }
+  .page__p-sum {
+    padding-bottom: 30px;
+  }
+  .hidden-sm {
+    display: none;
+  }
   /**/
 }
 
@@ -524,6 +533,91 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+  .p-sum {
+    padding: 30px;
+  }
+  .p-orderform__check {
+    margin-bottom: 0;
+    margin-top: 15px;
+  }
+  .p-orderform .ui-selectmenu-button.ui-button {
+    margin-bottom: 0;
+  }
+  .p-order__title {
+    margin-bottom: 15px;
+  }
+  .page__p-sum {
+    padding-top: 0;
+  }
+  .p-order__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .p-order__art {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .p-order__wrapper {
+    text-align: left;
+    padding-top: 18px;
+  }
+  .p-favourites__item {
+    padding-left: 0;
+  }
+  .p-favourites__check {
+    top: 0;
+    margin: 0;
+    z-index: 2;
+    background-color: #fff;
+  }
+  .p-favourites .p-order__art {
+    margin-bottom: 19px;
+  }
+  .p-favourites .ui-selectmenu-button.ui-button {
+    margin-bottom: 0;
+  }
+  .p-favourites__wp {
+    margin-top: 13px;
+  }
+  .p-favourites .p-order__img {
+    max-height: none;
+    width: 100%;
+  }
+  .p-favourites__price {
+    line-height: 16px;
+  }
+  .p-favourites__wp-price {
+    text-align: center;
+  }
+  .p-favourites__wp-price .p-favourites__price {
+    color: #1e1e1e;
+    font-size: 16px;
+    font-family: "RobotoCondensedBold", sans-serif;
+    margin-top: -6px;
+  }
+  .p-favourites__wp-last {
+    margin-top: 30px;
+  }
+  .page__p-placinganorder {
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 35px;
+  }
+  .page__p-totalcost {
+    text-align: right;
+  }
+  .p-share {
+    display: inline-block;
+    width: 72px;
+  }
+  .p-totalcost__title,
+  .p-totalcost__price {
+    text-align: right;
+    display: block;
+    line-height: 15px;
+    width: 100%;
+    float: none;
+  }
   /**/
 }
 
@@ -539,7 +633,10 @@
 }
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 373px) {
+  .p-order__wrapper {
+    padding-top: 5px;
+  }
   /**/
 }
 
@@ -571,6 +668,9 @@
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 992px) {
   .header__mob {
+    display: none;
+  }
+  .visible-sm {
     display: none;
   }
   /**/

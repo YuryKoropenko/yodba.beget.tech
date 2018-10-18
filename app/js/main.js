@@ -73,4 +73,12 @@ $(function() {
 			return false;
 		}
 	});
+
+	/*Убрать классы*/
+	if ($(window).width() < 767) {
+		$('.page__p-orderform .col-md-5').removeClass('order-2');
+		$('.page__p-orderform .col-md-7').removeClass('order-1');
+		$('.p-order__item .row').removeClass('align-items-center');
+		$('.p-favourites__item .row').removeClass('align-items-center');
+	}
 });
