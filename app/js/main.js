@@ -37,6 +37,24 @@ $(function() {
 		return false;
 	});
 
+	/* Подписка на рассылку - фокус */
+	$('.f-subscription__input').focusin(function() {
+		$(this).parent().parent('.f-subscription__form').addClass('f-subscription__form-focus');
+	});
+	$('.f-subscription__input').focusout(function() {
+		$(this).parent().parent('.f-subscription__form').removeClass('f-subscription__form-focus');
+	});
+	$('.f-subscription__input').keyup(function(e) {
+		var email = $(this).val()
+		/*var emailvalidator = email.indexOf('!');*/
+		var simvol = $(this).val().substr(-1);
+		if(!(simvol == '!' || simvol == '%' || simvol == '$' || simvol == '*' || simvol == '#' || simvol == '+' || simvol == '=' /*|| emailvalidator > 0*/)) {
+			$(this).parent().parent('.f-subscription__form').removeClass('f-subscription__form-error');
+		} else {
+			$(this).parent().parent('.f-subscription__form').addClass('f-subscription__form-error');
+		}
+	});
+
 	/* Фильтр */
 	$('.p-filter__toggle').on('click', function() {
 		$(this).toggleClass('active');

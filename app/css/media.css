@@ -56,6 +56,29 @@
   .hidden-sm {
     display: none;
   }
+  .page__p-callback {
+    margin-top: 30px;
+  }
+  .p-order__item .col-6 {
+    text-align: left !important;
+  }
+  .p-order__item .col-6 .p-order__wrapper {
+    padding-top: 18px;
+  }
+  .p-order__item {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ededed;
+  }
+  .p-order__item:last-child {
+    padding-bottom: 0;
+    border: none;
+  }
+  .p-personal .p-cardcontent__btn {
+    max-width: none;
+  }
+  .p-personal .p-orderform {
+    max-width: none;
+  }
   /**/
 }
 
@@ -617,6 +640,33 @@
     line-height: 15px;
     width: 100%;
     float: none;
+  }
+  .p-contacts__call {
+    margin-top: 15px;
+  }
+  .p-contacts__rekv {
+    margin-top: 30px;
+  }
+  .p-comein {
+    padding: 35px;
+  }
+  .p-personal .p-orderform__check {
+    margin-bottom: 30px;
+  }
+  .hidden-xs {
+    display: none !important;
+  }
+  .page__p-title {
+    margin-bottom: 0 !important;
+  }
+  .p-cardlike__item {
+    padding-bottom: 0;
+  }
+  .p-cardlike__item:hover .p-catitem__hover {
+    display: none !important;
+  }
+  .p-cardlike__item:hover .p-catitem::after {
+    display: none !important;
   }
   /**/
 }

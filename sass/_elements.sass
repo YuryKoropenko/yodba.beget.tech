@@ -409,6 +409,15 @@
 		margin: 0 auto
 		position: relative
 		padding-right: 44px
+		border: 1px solid #fff
+		&-focus
+			border-bottom: 1px solid #1e1e1e
+		&-error
+			border-bottom: 1px solid #e86161
+			.f-subscription__btn
+				opacity: .3
+			.f-subscription__error
+				display: block
 	&__input
 		width: 100%
 		border: none
@@ -434,6 +443,16 @@
 		background-image: url(../img/icons/arrow-toggle.png)
 		transform: rotate(-90deg)
 		-webkit-transform: rotate(-90deg)
+	&__error
+		color: #e86161
+		font-size: 12px
+		font-family: "RobotoCondensedLight", sans-serif
+		position: absolute
+		left: 0
+		right: 0
+		top: 100%
+		margin-top: 9px
+		display: none
 
 .f-nav
 	font-size: 0
@@ -635,6 +654,11 @@
 	display: block
 	position: relative
 	cursor: pointer
+	&__link
+		display: block
+		&:hover
+			text-decoration: none
+			color: inherit
 	&::after
 		content: ''
 		z-index: -1
@@ -649,6 +673,9 @@
 		height: auto
 		border: 1px solid #efefef
 		position: absolute
+	&:hover
+		text-decoration: none
+		color: inherit
 	&__top
 		height: 370px
 		width: 100%
@@ -1147,14 +1174,26 @@
 
 .p-cardlike
 	&__item
+		padding-bottom: 74px
+		position: relative
+		cursor: pointer
+		.p-catitem__hover
+			left: 0
+			right: 0
+			bottom: 0
+			top: auto
 		.p-catitem
 			display: block
 			&::after
-				display: none !important
-			&:hover
-				text-decoration: none
-				color: inherit
-				opacity: .5
+				left: 0
+				right: 0
+				top: 0
+		&:hover
+			.p-catitem
+				&::after
+					display: block !important
+			.p-catitem__hover
+				display: block
 	.owl-nav
 		span
 			display: none
@@ -1172,7 +1211,7 @@
 			left: -20px
 			top: 50%
 			z-index: 2
-			margin-top: -20px
+			margin-top: -57px
 			&:hover
 				opacity: .5
 		.owl-next
@@ -1191,7 +1230,7 @@
 			right: -20px
 			top: 50%
 			z-index: 2
-			margin-top: -20px
+			margin-top: -57px
 			&:hover
 				opacity: .5
 		.disabled
@@ -1345,7 +1384,13 @@
 		color: #a1a1a1
 		margin-bottom: 20px
 	&__item
-		margin-bottom: 15px
+		border-bottom: 1px solid #ededed
+		padding-bottom: 20px
+		margin-bottom: 20px
+		&:last-child
+			margin-bottom: 15px
+			border: none
+			padding-bottom: 0
 		.col-lg-2
 			text-align: right
 	&__img
@@ -1384,6 +1429,29 @@
 	&__value-price
 		&::after
 			content: '₽'
+	&__status
+		font-size: 14px
+		line-height: 16px
+		margin-top: 5px
+		display: block
+		padding-left: 15px
+		position: relative
+		&-ok
+			color: #83ad54
+			&::before
+				content: ''
+				width: 10px
+				height: 8px
+				background-image: url(../img/icons/green-check.png)
+				background-repeat: no-repeat
+				background-position: center center
+				background-size: contain
+				position: absolute
+				left: 0
+				top: 50%
+				margin: -4px
+				display: block
+
 
 .p-sum
 	padding: 45px 40px 42px
@@ -1498,6 +1566,31 @@
 				background-image: url(../img/icons/check.png)
 				border-color: #1e1e1e
 				background-color: #1e1e1e
+				background-repeat: no-repeat
+				background-position: center center
+	&__autocomplete
+		width: 100%
+		padding: 0
+		background-color: transparent
+		color: #1e1e1e
+		border: 1px solid #cecece
+		padding-left: 17px
+		height: 40px
+		border-radius: 0
+		padding-right: 40px
+		font-size: 13px
+		&-wp
+			position: relative
+			&::after
+				content: ''
+				width: 40px
+				position: absolute
+				right: 0
+				display: block
+				top: 0
+				bottom: 0
+				z-index: 1
+				background-image: url(../img/icons/arrow-toggle.png)
 				background-repeat: no-repeat
 				background-position: center center
 
@@ -1674,3 +1767,132 @@
 	&:hover
 		text-decoration: none
 		color: #1e1e1e
+
+.p-contacts
+	p
+		display: block
+		font-size: 13px
+		color: #a1a1a1
+		line-height: 20px
+	a
+		font-size: 13px
+		display: inline-block
+		font-size: 13px
+		color: #a1a1a1
+		line-height: 15px
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+			color: #a1a1a1
+	strong
+		font-size: 18px
+		line-height: 21px
+		color: #1a1a1a
+		font-family: "RobotoCondensedBold", sans-serif
+	h4
+		font-size: 14px
+		color: #1e1e1e
+		font-family: "CrimsonTextRegular", sans-serif
+		display: block
+		text-transform: uppercase
+		margin-bottom: 15px
+	&__text
+	&__link
+		height: 100%
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-end
+		padding-bottom: 3px
+	&__call
+		margin-top: 37px
+	&__rekv
+		margin-top: 55px
+
+.p-callback
+	&__title
+		display: block
+		margin-bottom: 27px
+		text-transform: uppercase
+		font-family: "CrimsonTextRegular", sans-serif
+		font-size: 16px
+		color: #1e1e1e
+		line-height: 21px
+	&__input
+		display: block
+		width: 100%
+		margin-bottom: 15px
+		height: 40px
+		border: 1px solid #cecece
+		line-height: 38px
+		background-color: #fff
+		padding: 0 17px
+		font-size: 13px
+	&__textarea
+		height: 160px
+		width: 100%
+		display: block
+		border: 1px solid #cecece
+		line-height: 15px
+		padding: 13px 17px
+		font-size: 13px
+		resize: none
+		&:focus
+			outline: none
+	&__btn
+		height: 38px
+		line-height: 38px
+		font-size: 14px
+		margin-top: 10px
+		padding: 0
+		display: block
+		width: 100%
+		border: none
+		cursor: pointer
+		margin-top: 26px
+
+.p-shipping
+	li
+		margin-bottom: 0
+
+.p-bigtext
+	padding: 50px
+	&__title
+		color: #1e1e1e
+		font-size: 18px
+		line-height: 32px
+		letter-spacing: 1.4px
+		font-family: "CrimsonTextRegular", sans-serif
+		display: block
+		text-align: center
+		text-transform: uppercase
+
+.p-personal
+	.p-orderform
+		max-width: 440px
+	.p-orderform__check
+		margin-bottom: 39px
+		margin-top: 5px
+		label
+			&::before
+				top: -1px
+				margin-top: 0
+	.p-cardcontent__btn
+		max-width: 280px
+
+.p-exit
+	display: inline-block
+	color: #a1a1a1
+	font-size: 13px
+	line-height: 15px
+	text-decoration: underline
+	background-image: url(../img/icons/exit.png)
+	background-repeat: no-repeat
+	background-position: left center
+	background-size: auto 100%
+	padding-left: 20px
+	&:hover
+		text-decoration: underline
+		color: #a1a1a1

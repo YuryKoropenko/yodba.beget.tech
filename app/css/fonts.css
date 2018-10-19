@@ -10,6 +10,12 @@
   src: url("../fonts/RobotoCondensed/RobotoCondensed-Bold.ttf");
 }
 
+/* font-family: "RobotoCondensedLight" */
+@font-face {
+  font-family: "RobotoCondensedLight";
+  src: url("../fonts/RobotoCondensed/RobotoCondensed-Light.ttf");
+}
+
 /* font-family: "CrimsonTextRegular" */
 @font-face {
   font-family: "CrimsonTextRegular";
